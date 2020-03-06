@@ -1,0 +1,17 @@
+index,name,red,green,blue,hex
+0, black,    0,   0,   0,#000000
+1, white,  255, 255, 255,#FFFFFF
+2, red,  125,  22,  14,#7d160e
+3, cyan,  188, 253, 238,#bcfdee
+4, purple,  189,  82, 198,#bd52c6
+5, green,   92, 200, 100,#5cc864
+6, blue,    0,  19, 163,#0013a3
+7, yellow,  239, 237, 136,#efed88
+8, orange,  210, 139,  94,#d28b5e
+9, brown,   97,  69,  19,#614513
+10, light red,  239, 127, 123,#ef7f7b
+11, gray 1,   51,  51,  51,#333333
+12, gray 2,  119, 119, 119,#777777
+13, light green,  189, 251, 124,#bdfb7c
+14, light blue,   52, 137, 247,#3489f7
+15, gray 3,  187, 187, 187,#bbbbbb

@@ -1,0 +1,8 @@
+P3
+# PC - CGA (m5, high) (c/r/w) palette
+1 4
+255
+   0    0    0   # 0: black - #000
+  95   15    0   # 11: light cyan - #5ff
+ 245    5    0   # 12: light red - #f55
+ 255   15    0   # 15: white - #fff

@@ -1,0 +1,20 @@
+P3
+# TMS9928 NTSC (ColecoVision, Sord M5) palette
+1 16
+255
+   0    0    0   # 0: transparent - #00000000
+   0    0    0   # 1: black - #000000
+  33  200   66   # 2: medium green - #21c842
+  94  220  120   # 3: light green - #5edc78
+  84   85  237   # 4: dark blue - #5455ed
+ 125  118  252   # 5: light blue - #7d76fc
+ 212   82   77   # 6: dark red - #d4524d
+  66  235  245   # 7: cyan - #42ebf5
+ 252   85   84   # 8: medium red - #fc5554
+ 255  121  120   # 9: light red - #ff7978
+ 212  193   84   # 10: dark yellow - #d4c154
+ 230  206  128   # 11: light yellow - #e6ce80
+  33  176   59   # 12: dark green - #21b03b
+ 201   91  186   # 13: magenta - #c95bba
+ 204  204  204   # 14: gray - #cccccc
+ 255  255  255   # 15: white - #ffffff

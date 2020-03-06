@@ -1,0 +1,8 @@
+P3
+# PC - CGA (m4, p0, low) (g/r/y) palette
+1 4
+255
+   0    0    0   # 0: black - #000
+  10    0    0   # 2: green - #0a0
+ 160    0    0   # 4: red - #a00
+ 165    0    0   # 6: brown - #a50

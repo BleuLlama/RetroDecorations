@@ -1,0 +1,20 @@
+P3
+# Macintosh II palette
+1 16
+255
+ 255  255  255   # 0: white - #ffffff
+ 251  243    5   # 1: yellow - #fbf305
+ 255  100    3   # 2: orange - #ff6403
+ 221    9    7   # 3: red - #dd0907
+ 242    8  132   # 4: magenta - #f20884
+  71    0  165   # 5: purple - #4700a5
+   0    0  211   # 6: blue - #0000d3
+   2  171  234   # 7: cyan - #02abea
+  31  183   20   # 8: green - #1fb714
+   0  100   18   # 9: dark green - #006412
+  86   44    5   # 10: brown - #562c05
+ 144  113   58   # 11: tan - #90713a
+ 192  192  192   # 12: light grey - #c0c0c0
+ 128  128  128   # 13: medium grey - #808080
+  64   64   64   # 14: dark grey - #404040
+   0    0    0   # 15: black - #000000

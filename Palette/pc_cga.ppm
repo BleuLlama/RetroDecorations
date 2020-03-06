@@ -1,0 +1,20 @@
+P3
+# PC - CGA palette
+1 16
+255
+   0    0    0   # 0: black - #000
+   0   10    0   # 1: blue - #00A
+  10    0    0   # 2: green - #0a0
+  10   10    0   # 3: cyan - #0aa
+ 160    0    0   # 4: red - #a00
+ 160   10    0   # 5: magenta - #a0a
+ 165    0    0   # 6: brown - #a50
+ 170   10    0   # 7: light gray - #aaa
+  85    5    0   # 8: dark gray - #555
+  85   15    0   # 9: light blue - #55f
+  95    5    0   # 10: light green - #5f5
+  95   15    0   # 11: light cyan - #5ff
+ 245    5    0   # 12: light red - #f55
+ 245   15    0   # 13: light magenta - #f5f
+ 255    5    0   # 14: yellow - #ff5
+ 255   15    0   # 15: white - #fff

@@ -1,9 +1,7 @@
 
-  Palettes for various systems and configurations will be here shortly
+There's a php file in here that will generate a webpage that will
+let you generate the PNM and CSV files also in this directory.
 
-Considering different file formats:
-PNG/PNM image file
-JSON structure
-CSV file
-INI file
+I have a version of it up at this url:
 
+	http://umlautllama.com/palettes.php

@@ -1,0 +1,5 @@
+index,name,red,green,blue,hex
+0, grey,  160, 160, 160,#a0a0a0
+1, black,    0,   0,   0,#000000
+2, white,  240, 240, 240,#f0f0f0
+3, blue,   96, 128, 176,#6080b0

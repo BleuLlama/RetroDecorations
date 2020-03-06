@@ -1,0 +1,20 @@
+P3
+# TMS9918 NTSC (TI99, MSX) palette
+1 16
+255
+   0    0    0   # 0: transparent - #00000000
+   0    0    0   # 1: black - #000000
+  84  169   55   # 2: medium green - #54a937
+ 113  210  106   # 3: light green - #71d26a
+  36   57  206   # 4: dark blue - #2439ce
+  92  118  246   # 5: light blue - #5c76f6
+ 144   50   34   # 6: dark red - #903222
+ 114  228  244   # 7: cyan - #72e4f4
+ 198   70   47   # 8: medium red - #c6462f
+ 239  123   98   # 9: light red - #ef7b62
+ 225  229   85   # 10: dark yellow - #e1e555
+ 215  213  135   # 11: light yellow - #d7d587
+  58  120   38   # 12: dark green - #3a7826
+ 197   72  223   # 13: magenta - #c548df
+ 206  206  206   # 14: gray - #cecece
+ 255  255  255   # 15: white - #ffffff

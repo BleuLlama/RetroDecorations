@@ -1,0 +1,20 @@
+P3
+# Commodore 64 palette
+1 16
+255
+   0    0    0   # 0: black - #000000
+ 255  255  255   # 1: white - #FFFFFF
+ 125   22   14   # 2: red - #7d160e
+ 188  253  238   # 3: cyan - #bcfdee
+ 189   82  198   # 4: purple - #bd52c6
+  92  200  100   # 5: green - #5cc864
+   0   19  163   # 6: blue - #0013a3
+ 239  237  136   # 7: yellow - #efed88
+ 210  139   94   # 8: orange - #d28b5e
+  97   69   19   # 9: brown - #614513
+ 239  127  123   # 10: light red - #ef7f7b
+  51   51   51   # 11: gray 1 - #333333
+ 119  119  119   # 12: gray 2 - #777777
+ 189  251  124   # 13: light green - #bdfb7c
+  52  137  247   # 14: light blue - #3489f7
+ 187  187  187   # 15: gray 3 - #bbbbbb

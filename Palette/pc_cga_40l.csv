@@ -1,0 +1,5 @@
+index,name,red,green,blue,hex
+0, black,    0,   0,   0,#000
+2, green,   10,   0,   0,#0a0
+4, red,  160,   0,   0,#a00
+6, brown,  165,   0,   0,#a50

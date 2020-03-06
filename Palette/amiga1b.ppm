@@ -1,0 +1,8 @@
+P3
+# Amiga 1.1 (lighter) palette
+1 4
+255
+ 112  112  176   # 0: violet-blue - #7070b0
+ 240  240  240   # 1: white - #f0f0f0
+   0    0   32   # 2: black - #000020
+ 208   80   80   # 3: red-orange - #d05050
