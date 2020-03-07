@@ -1,62 +1,72 @@
 <?php
+/* 
 
-/*
+Palette browser thing
+- scott lawrence
+yorgle@gmail.com
 
-  scp index.php warped:umlautllama.com/palettes.php
-
-
+A part of the RetroDecorations repository
+	https://github.com/BleuLlama/RetroDecorations
 
 */
 
-$palettes = [
-	'amiga1' => [
-		'name' => 'Amiga 1.3',
-		'colors' => [ 	'0,blue,#0050A0',
-						'1,white,#f0f0f0',
-						'2,black,#000020',
-						'3,orange,#f08020'
-					]
-	],
-	'amiga1b' => [
-		'name' => 'Amiga 1.1 (lighter)',
-		'colors' => [ 	'0,violet-blue,#7070b0',
-						'1,white,#f0f0f0',
-						'2,black,#000020',
-						'3,red-orange,#d05050'
-					]
-	],
-	'amiga2' => [
-		'name' => 'Amiga 2.04',
-		'colors' => [ 	'0,grey,#a0a0a0',
-						'1,black,#000000',
-						'2,white,#f0f0f0',
-						'3,blue,#6080b0',
-					]
-	],
-	'commodore64' => [
-		'name' => 'Commodore 64',
-		'colors' => [
-			'0,black,#000,#000000',
-			'1,white,#FFF,#FFFFFF',
-			'2,red,#800,#7d160e',
-			'3,cyan,#AFE,#bcfdee',
-			'4,purple,#C4C,#bd52c6',
-			'5,green,#0C5,#5cc864',
-			'6,blue,#00A,#0013a3',
-			'7,yellow,#EE7,#efed88',
 
-			'8,orange,#D85,#d28b5e',
-			'9,brown,#640,#614513',
-			'10,light red,#F77,#ef7f7b',
-			'11,gray 1,#333,#333333',
-			'12,gray 2,#777,#777777',
-			'13,light green,#AF6,#bdfb7c',
-			'14,light blue,#08F,#3489f7',
-			'15,gray 3,#BBB,#bbbbbb',
-		],
+$version = "v1.02 2020-03-06";
+/*
+	v1.02 2020-03-06 - SL - lots more palettes, groups for the dropdown
+	v1.01 2020-03-06 - SL - version labeling, footer, json export. fixed col widths 
+	v1.00 2020-03-05 - SL - inital release to teh webz
+*/
+
+$palettes = [
+
+	"Apple",
+
+	'apple2' => [
+		'name' => 'Apple ][ (lo-res)',
+		'colors' => [ 	'0,black,#000000',
+						'1,magenta,#722640',
+						'2,dark blue,#40337f',
+						'3,purple,#e434fe',
+
+						'4,dark green,#0f5940',
+						'5,grey 1,#808080',
+						'6,medium blue,#1c9afe',
+						'7,light blue,#bfb3ff',
+
+						'8,brown,#404c00',
+						'9,orange,#e46502',
+						'10,grey 2,#808080',
+						'11,pink,#f1a6bf',
+
+						'12,green,#1ccb00',
+						'13,yellow,#bfcc80',
+						'14,aqua,#8dd9bf',
+						'15,white,#ffffff',
+					]
 	],
+
+	'apple2_hi0' => [
+		'name' => 'Apple ][ (hi-res 0)',
+		'colors' => [ 	'0,black,#000000',
+						'1,purple,#ff00ff',
+						'2,green,#00ff00',
+						'3,white,#ffffff',
+					]
+	],
+	'apple2_hi1' => [
+		'name' => 'Apple ][ (hi-res 1)',
+		'colors' => [ 	'0,black,#000000',
+						'1,blue,#00afff',
+						'2,orange,#ff5001',
+						'3,white,#ffffff',
+					]
+	],
+
+
+
 	'mac2' => [
-		'name' => 'Macintosh II',
+		'name' => 'Mac II',
 		'colors' => [
 			'0,white,#ffffff',
 			'1,yellow,#fbf305',
@@ -79,60 +89,257 @@ $palettes = [
 			'15,black,#000000',
 		],
 	],
-	'pc_cga' => [
-		'name' => 'PC - CGA',
+
+
+	'maclabels' => [
+		'name' => 'Mac Finder Labels',
 		'colors' => [
-			'0,black,#000',
-			'1,blue,#00A',
-			'2,green,#0a0',
-			'3,cyan,#0aa',
-			'4,red,#a00',
-			'5,magenta,#a0a',
-			'6,brown,#a50',
-			'7,light gray,#aaa',
-			'8,dark gray,#555',
-			'9,light blue,#55f',
-			'10,light green,#5f5',
-			'11,light cyan,#5ff',
-			'12,light red,#f55',
-			'13,light magenta,#f5f',
-			'14,yellow,#ff5',
-			'15,white,#fff',
+			'0,essential,#ff6400',
+			'1,hot,#df1b1b',
+			'2,in progress,#f80184',
+			'3,cool,#00adef',
+
+			'4,personal,#1600d7',
+			'5,project 1,#106310',
+			'6,project 2,#522900',
 		]
 	],
 
-	'pc_cga_40l' => [
-		'name' => 'PC - CGA (m4, p0, low) (g/r/y)',
-		'colors' => 'pc_cga:0,2,4,6',
-	],
-	'pc_cga_40h' => [
-		'name' => 'PC - CGA (m4, p0, high) (g/r/y)',
-		'colors' => 'pc_cga:0,10,12,14',
+	"Commodore",
+
+	'vic20' => [
+		'name' => 'Commodore Vic-20',
+		'credits' => [
+			'from wikipedia'
+		],
+		'colors' => [
+			'0,black,#000000',
+			'1,white,#FFFFFF',
+			'2,red,#8d3e37',
+			'3,cyan,#72c1c8',
+
+			'4,purple,#80348b',
+			'5,green,#56a04a',
+			'6,blue,#40318d',
+			'7,yellow,#aab95d',
+
+			'8,orange,#895228',
+			'9,light orange,#d19d73',
+			'10,light red,#b86962',
+			'11,light cyan,#87d6dd',
+
+			'12,light purple,#aa5fb6',
+			'13,light green,#93df88',
+			'14,light blue,#7f71cc',
+			'15,light yellow,#fcfdb2',
+		],
 	],
 
-	'pc_cga_41l' => [
-		'name' => 'PC - CGA (m4, p1, low) (c/m/w)',
-		'colors' => 'pc_cga:0,3,5,7',
-	],
-	'pc_cga_41h' => [
-		'name' => 'PC - CGA (m4, p1, high) (c/m/w)',
-		'colors' => 'pc_cga:0,11,13,15',
+	'vic20_b' => [
+		'name' => 'Commodore Vic-20 (calibrated)',
+		'credits' => [
+			'from wikipedia'
+		],
+		'colors' => [
+			'0,black,#000000',
+			'1,white,#FFFFFF',
+			'2,red,#782922',
+			'3,cyan,#87d6dd',
+
+			'4,purple,#aa5fb6',
+			'5,green,#56a04a',
+			'6,blue,#40318d',
+			'7,yellow,#bfce73',
+
+			'8,orange,#aa7449',
+			'9,light orange,#eabe89',
+			'10,light red,#b86962',
+			'11,light cyan,#c7ffff',
+
+			'12,light purple,#ea9ff6',
+			'13,light green,#94e089',
+			'14,light blue,#7f71cc',
+			'15,light yellow,#feffb2',
+		],
 	],
 
-	'pc_cga_5l' => [
-		'name' => 'PC - CGA (m5, low) (c/r/w)',
-		'colors' => 'pc_cga:0,3,4,7',
+	'commodore64' => [
+		'name' => 'Commodore 64',
+		'colors' => [
+			'0,black,#000,#000000',
+			'1,white,#FFF,#FFFFFF',
+			'2,red,#800,#7d160e',
+			'3,cyan,#AFE,#bcfdee',
+			'4,purple,#C4C,#bd52c6',
+			'5,green,#0C5,#5cc864',
+			'6,blue,#00A,#0013a3',
+			'7,yellow,#EE7,#efed88',
+
+			'8,orange,#D85,#d28b5e',
+			'9,brown,#640,#614513',
+			'10,light red,#F77,#ef7f7b',
+			'11,gray 1,#333,#333333',
+			'12,gray 2,#777,#777777',
+			'13,light green,#AF6,#bdfb7c',
+			'14,light blue,#08F,#3489f7',
+			'15,gray 3,#BBB,#bbbbbb',
+		],
 	],
-	'pc_cga_5h' => [
-		'name' => 'PC - CGA (m5, high) (c/r/w)',
-		'colors' => 'pc_cga:0,11,12,15',
+	'commodore64_b' => [
+		'name' => 'Commodore 64 (calibrated)',
+		'credits' => [
+			'from http://unusedino.de/ec64/technical/misc/vic656x/colors/',
+			'Philip "Pepto" Timmermann, <pepto@pepto.de>'
+		],
+		'colors' => [
+			'0,black,#000000',
+			'1,white,#FFFFFF',
+			'2,red,#68372b',
+			'3,cyan,#70A4B2',
+			'4,purple,#6f3d86',
+			'5,green,#588d43',
+			'6,blue,#352879',
+			'7,yellow,#b8c76f',
+			'8,orange,#6f4f25',
+			'9,brown,#433900',
+			'10,light red,#9a6759',
+			'11,dark grey,#444444',
+			'12,grey,#6c6c6c',
+			'13,light green,#9ad284',
+			'14,light blue,#6c5eb5',
+			'15,light grey,#959595',
+		],
 	],
 
+	'Commodore Amiga',
+
+	'amiga1b' => [
+		'name' => 'Amiga 1.1 (lighter)',
+		'colors' => [ 	'0,violet-blue,#7070b0',
+						'1,white,#f0f0f0',
+						'2,black,#000020',
+						'3,red-orange,#d05050'
+					]
+	],
+	'amiga1' => [
+		'name' => 'Amiga 1.3',
+		'colors' => [ 	'0,blue,#0050A0',
+						'1,white,#f0f0f0',
+						'2,black,#000020',
+						'3,orange,#f08020'
+					]
+	],
+	'amiga2' => [
+		'name' => 'Amiga 2.04',
+		'colors' => [ 	'0,grey,#a0a0a0',
+						'1,black,#000000',
+						'2,white,#f0f0f0',
+						'3,blue,#6080b0',
+					]
+	],
+
+	"Misc Systems",
+
+
+	'acpc' => [
+		'name' => "Amstrad CPC",
+		'info' => [
+			'colors from wikipedia',
+		],
+		'colors' => [
+			'0,black,#000000',
+			'1,blue,#080080',
+			'2,bright blue,#1c00ff',
+			'3,red,#800000',
+			'4,magenta,#800080',
+			'5,violet,#8100ff',
+			'6,bright red,#ff0000',
+			'7,purple,#ff0080',
+			'8,bright magenta,#ff00ff',
+
+			'9,green,#008001',
+			'10,cyan,#028080',
+			'11,sky blue,#0180ff',
+			'12,yellow,#818000',
+			'13,grey,#808080',
+			'14,pale blue,#8080ff',
+			'15,orange,#ff8001',
+			'16,pink,#ff8080',
+			'17,pale magenta,#ff80ff',
+
+			'18,bright green,#00ff00',
+			'19,sea green,#00ff80',
+			'20,bright cyan,#00ffff',
+			'21,lime green,#80ff00',
+			'22,pale green,#80ff80',
+			'23,pale cyan,#80ffff',
+			'24,bright yellow,#ffff00',
+			'25,pale yellow,#ffff80',
+			'26,bright white,#ffffff',
+		]
+	],
+
+	'acpc_bas' => [
+		'name' => "Amstrad CPC (BASIC colors)",
+		'info' => [
+			'colors from wikipedia',
+		],
+		'colors' => 'acpc:'
+					. '1,24,20,6,'
+					. '26,0,2,8,'
+					. '10,12,14,16,'
+					. '18,22,1,11'
+	],
+
+	'bbcmicro' => [
+		'name' => "BBC Micro, Teletext (RGBI)",
+		'colors' => [
+			'0,black,#000000',
+			'1,blue,#1c00ff',
+			'2,red,#ff0000',
+			'3,magenta,#ff00ff',
+			'4,green,#00ff00',
+			'5,cyan,#00ffff',
+			'6,yellow,#ffff00',
+			'7,white,#ffffff'
+		]
+	],
+
+	'aquarius' => [
+		'name' => 'Mattel Aquarius',
+		'info' => [
+			'color names from the aquarius manual https://www.vdsteenoven.com/aquarius/pfsimple.php',
+			'values from wikipedia: https://en.wikipedia.org/wiki/List_of_8-bit_computer_hardware_graphics'
+		],
+		'colors' => [ 	'0,black,#000000',
+						'1,red,#c3001b',
+						'2,green,#08bf01',
+						'3,yellow,#c8b906',
+
+						'4,blue,#1005b6',
+						'5,violet,#b700d1',
+						'6,light blue-green,#00c6a4',
+						'7,white,#ffffff',
+
+						'8,light gray,#bfbfbf',
+						'9,blue-green,#3fa695',
+						'10,magenta,#842690',
+						'11,dark blue,#050d68',
+
+						'12,light yellow,#b9b156',
+						'13,light green,#3b972e',
+						'14,orange,#7e182a',
+						'15,dark gray(*),#000000',
+					]
+	],
 
 
 	'tms9918' => [
 		'name' => 'TMS9918 NTSC (TI99, MSX)',
-		'info' => 'https://atariage.com/forums/topic/155790-tms-9918a9928a9929a-colors/',
+		'info' => [
+			'https://atariage.com/forums/topic/155790-tms-9918a9928a9929a-colors/',
+			'color names taken from TMS9918 datasheet'
+		],
 		'colors' => [
 			'0,transparent,#00000000',
 			'1,black,#000000',
@@ -180,6 +387,89 @@ $palettes = [
 			'15,white,#ffffff',
 		]
 	],
+
+	'zxspectrum' => [
+		'name' => "ZX Spectrum",
+		'info' => [
+			'color names pulled from spectrum manual',
+			'3 is "purple, or magenta"',
+			'5 is "pale blue, techically called cyan"',
+			'bright black. lol'
+		],
+		'colors' => [
+			'0,black,#000000',
+			'1,blue,#1600d7',
+			'2,red,#d70000',
+			'3,purple,#d700d7',
+			'4,green,#04d702',
+			'5,pale blue,#00d7d7',
+			'6,yellow,#d7d702',
+			'7,white,#d7d7d7',
+
+			'8,bright black,#000000',
+			'9,bright blue,#1c00ff',
+			'10,bright red,#ff0000',
+			'11,bright purple,#ff00ff',
+			'12,bright green,#00ff00',
+			'13,bright pale blue,#00ffff',
+			'14,bright yellow,#feff00',
+			'15,bright white,#ffffff',
+		]
+	],
+
+
+	"PC / Windows",
+
+	'pc_cga' => [
+		'name' => 'PC - CGA',
+		'colors' => [
+			'0,black,#000',
+			'1,blue,#00A',
+			'2,green,#0a0',
+			'3,cyan,#0aa',
+			'4,red,#a00',
+			'5,magenta,#a0a',
+			'6,brown,#a50',
+			'7,light gray,#aaa',
+
+			'8,dark gray,#555',
+			'9,light blue,#55f',
+			'10,light green,#5f5',
+			'11,light cyan,#5ff',
+			'12,light red,#f55',
+			'13,light magenta,#f5f',
+			'14,yellow,#ff5',
+			'15,white,#fff',
+		]
+	],
+
+	'pc_cga_40l' => [
+		'name' => 'PC - CGA (m4, p0, low) (g/r/y)',
+		'colors' => 'pc_cga:0,2,4,6',
+	],
+	'pc_cga_40h' => [
+		'name' => 'PC - CGA (m4, p0, high) (g/r/y)',
+		'colors' => 'pc_cga:0,10,12,14',
+	],
+
+	'pc_cga_41l' => [
+		'name' => 'PC - CGA (m4, p1, low) (c/m/w)',
+		'colors' => 'pc_cga:0,3,5,7',
+	],
+	'pc_cga_41h' => [
+		'name' => 'PC - CGA (m4, p1, high) (c/m/w)',
+		'colors' => 'pc_cga:0,11,13,15',
+	],
+
+	'pc_cga_5l' => [
+		'name' => 'PC - CGA (m5, low) (c/r/w)',
+		'colors' => 'pc_cga:0,3,4,7',
+	],
+	'pc_cga_5h' => [
+		'name' => 'PC - CGA (m5, high) (c/r/w)',
+		'colors' => 'pc_cga:0,11,12,15',
+	],
+
 	'win16' => [
 		'name' => 'Windows (16 color)',
 		'colors' => [
@@ -204,58 +494,215 @@ $palettes = [
 			'15,white,#ffffff',
 		]
 	],
+
+
+	"Nintendo",
+
+	'dmg01' => [
+		'name' => 'Gameboy',
+		'info' => [ 'my names. lol'],
+		'colors' => [
+			'0,Dark Pea Green,#0f390f',
+			'1,Medium Pea Green,#316231',
+			'2,Pea Green,#8bac0d',
+			'3,Bright Pea Green,#9bbc0f',
+		]
+	],
+	'gbc_u' => [
+		'name' => 'GBC - Brown (Up)',
+		'colors' => [
+			'0,black,#000000', '1,brown,#844204',
+			'2,peach,#ec9a54', '3,white,#fcfafc',
+		]
+	],
+	'gbc_d' => [
+		'name' => 'GBC - Pastel Mix (Down)',
+		'colors' => [
+			'0,black,#000000', '1,violet,#9c92f4',
+			'2,peach,#ec8a8c', '3,pale yellow,#fcfaac',
+		]
+	],
+	'gbc_l' => [
+		'name' => 'GBC - Blue (Left)',
+		'colors' => [
+			'0,black,#000000',
+			'1,blue,#0d32fc',
+			'2,light blue,#7cabfc', 
+			'3,white,#fcfafc',
+
+			'4,dark red,#ac2624',
+			'5,light red,#Ec8a8c',
+			'6,dark green,#4c8a03',
+			'7,green,#00fa03',
+		]
+	],
+	'gbc_r' => [
+		'name' => 'GBC - Green (Right)',
+		'colors' => [
+			'0,black,#000000',
+			'1,red,#fc3105',
+			'2,green,#00fa03',
+			'3,white,#fcfafc',
+		]
+	],
+
+
+	'gbc_ua' => [
+		'name' => 'GBC - Red (Right+A)',
+		'colors' => [
+			'0,black,#000000',
+			'1,red,#a62624',
+			'2,light red,#ec8a8c',
+			'3,white,#fcfafc',
+
+			'4,dark green,#4c8a03',
+			'5,green,#00fa03',
+			'6,blue,#0d32fc',
+			'7,light blue,#7cabfc',
+		]
+	],
+	'gbc_da' => [
+		'name' => 'GBC - Orange (Down+A)',
+		'colors' => [
+			'0,black,#000000',
+			'1,orange,#fc3105',
+			'2,yellow,#f4fe04',
+			'3,white,#fcfafc',
+		]
+	],
+	'gbc_la' => [
+		'name' => 'GBC - Dark Blue (Left+A)',
+		'colors' => [
+			'0,black,#000000',
+			'1,dark blue,#4432a4',
+			'2,light blue,#9c92f4',
+			'3,white,#fcfafc',
+
+			'4,dark red,#ac2624',
+			'5,light red,#ec8a8c',
+			'6,brown,#844204',
+			'7,orange,#ec9154',
+		]
+	],
+	'gbc_ra' => [
+		'name' => 'GBC - Dark Green (Right+A)',
+		'colors' => [
+			'0,black,#000000',
+			'1,blue,#0d32fc',
+			'2,green,#00fa03',
+			'3,white,#fcfafc',
+			'4,dark red,#ac2624',
+			'5,light red,#ec8a8c',
+		]
+	],
+
+	'gbc_ub' => [
+		'name' => 'GBC - Dark Brown (Up+B)',
+		'colors' => [
+			'0,dark brown,#4c2a04',
+			'1,brown,#947a4c',
+			'2,dark tan,#c4ae94',
+			'3,tan,#fcebe4',
+
+			'4,black,#000000',
+			'5,bright brown,#844204',
+			'6,peach,#ec9a54',
+		]
+	],
+	'gbc_db' => [
+		'name' => 'GBC - Yellow (Down+B)',
+		'colors' => [
+			'0,black,#000000',
+			'1,brown,#844204',
+			'2,yellow,#f4fe04',
+			'3,white,#fcfafc',
+
+			'4,blue,#0d32fc',
+			'5,light blue,#7cabfc',
+			'6,dark green,#4c8a03',
+			'7,green,#00fa03',
+		]
+	],
+	'gbc_lb' => [
+		'name' => 'GBC - Grayscale (Left+B)',
+		'colors' => [
+			'0,black,#000000',
+			'1,dark gray,#727472',
+			'2,gray,#bcbabc',
+			'3,white,#fcfafc',
+		]
+	],
+	'gbc_rb' => [
+		'name' => 'GBC - Inverted (Right+B)',
+		'colors' => [
+			'0,white,#fcfafc',
+			'1,yellow,#f4fe04',
+			'2,cyan,#00a2a4',
+			'3,black,#030204',
+		]
+	],
 ];
 
 $nColors = 32;
 
 function adjustPaletteStruct( $pals )
 {
+	$group = '';
 	foreach( $pals as $key => $p )
 	{
-		$pals[ $key ][ 'key' ] = $key;
-		$nc = [];
+		if( is_string( $p )) {
+			$group = $p;
+		}
+		if( !is_string( $p ) ) {
+			$pals[ $key ][ 'key' ] = $key;
+			$pals[ $key ][ 'group' ] = $group;
+			$nc = [];
 
-		if( is_array( $p[ 'colors' ])) {
-			foreach( $p[ 'colors' ] as $c )
-			{
-				$x = explode( ',', $c );
-				$xc = [
-					'index' => $x[0],
-					'name' => $x[1],
-					'hex' => $x[2],
-					'r' => hexdec( substr( $x[2], 1, 2 )),
-					'g' => hexdec( substr( $x[2], 3, 2 )),
-					'b' => hexdec( substr( $x[2], 5, 2 )),
-					//'x' => $x,
-				];
+			if( is_array( $p[ 'colors' ])) {
+				foreach( $p[ 'colors' ] as $c )
+				{
+					$x = explode( ',', $c );
+					$xc = [
+						'index' => $x[0],
+						'name' => $x[1],
+						'hex' => $x[2],
+						'r' => hexdec( substr( $x[2], 1, 2 )),
+						'g' => hexdec( substr( $x[2], 3, 2 )),
+						'b' => hexdec( substr( $x[2], 5, 2 )),
+						//'x' => $x,
+					];
 
-				if( strlen( $x[3] ) == 7 ) {
-					$xc[ 'hex' ] = $x[3];
-					$xc[ 'r' ] = hexdec( substr( $x[3], 1, 2 ));
-					$xc[ 'g' ] = hexdec( substr( $x[3], 3, 2 ));
-					$xc[ 'b' ] = hexdec( substr( $x[3], 5, 2 ));
+					if( strlen( $x[3] ) == 7 ) {
+						$xc[ 'hex' ] = $x[3];
+						$xc[ 'r' ] = hexdec( substr( $x[3], 1, 2 ));
+						$xc[ 'g' ] = hexdec( substr( $x[3], 3, 2 ));
+						$xc[ 'b' ] = hexdec( substr( $x[3], 5, 2 ));
+					}
+					$nc[] = $xc;
 				}
-				$nc[] = $xc;
+				$pals[ $key ][ 'colors' ] = $nc;
 			}
-			$pals[ $key ][ 'colors' ] = $nc;
 		}
 	}
 
 	// expand out reference colors
 	foreach( $pals as $key => $p ) {
-		if( !is_array( $p[ 'colors' ])) {
-			$ccc = [];
+		if( !is_string( $p ) ) {
 
-			$px = explode( ':', $p[ 'colors' ] );
-			if( count( $px ) > 1 ) {
-				$src = $pals[ $px[0] ]['colors'];
+			if( !is_array( $p[ 'colors' ])) {
+				$ccc = [];
 
-				$pc = explode( ',', $px[1] );
-				foreach( $pc as $iiic ) {
-					$ccc[] = $src[ intval( $iiic ) ];
+				$px = explode( ':', $p[ 'colors' ] );
+				if( count( $px ) > 1 ) {
+					$src = $pals[ $px[0] ]['colors'];
+
+					$pc = explode( ',', $px[1] );
+					foreach( $pc as $iiic ) {
+						$ccc[] = $src[ intval( $iiic ) ];
+					}
 				}
+				$pals[ $key ][ 'colors' ] = $ccc;
 			}
-			$pals[ $key ][ 'colors' ] = $ccc;
 		}
 	}
 
@@ -286,7 +733,7 @@ body {
 }
 
 td.ink {
-	width: 12vw;
+	/* width: 12vw; */
 	border: 2px solid black;
 	height: 12vw;
 	padding: 1em;
@@ -300,6 +747,7 @@ th {
 }
 table.palette {
 	width: 100%;
+	table-layout: fixed;
 }
 
 table.wide {
@@ -351,6 +799,32 @@ span.upper {
 .palpicker {
 	font-size: larger;
 }
+
+
+.content {
+	min-height: calc(100vh - 3.5em);
+}
+.footer {
+	text-align: center;
+	border: 1px solid black;
+	padding: .5em;
+	border-radius: .5em;
+	background:#888;
+}
+.footer > span{
+	width:100%;
+}
+
+a.boldlink:link,
+a.boldlink:visited,
+a.boldlink:hover,
+a.boldlink:active,
+a.boldlink
+{
+	font-weight:bolder;
+	color: black;
+}
+
 </style>
 
 
@@ -360,6 +834,7 @@ span.upper {
 </script>
 
 <body>
+	<div class="content">
 	<br/>
 	<br/>
 	<table class="wide">
@@ -367,14 +842,27 @@ span.upper {
 			<td>
 				<select id="palpick" class="palpicker">
 					<option value="0" disabled>Select one</option>
-					<? foreach( $palettes as $key => $pal ) { ?>
-						<option value="<?=$key;?>"><?=$pal['name'];?></option>
+					<? 
+					$group = '';
+					foreach( $palettes as $key => $pal ) { 
+						if( is_string( $pal )) {
+							if( !empty( $group )) {
+								echo '</optgroup>';
+							}
+							$group = $pal;
+							?><optgroup label="<?=$group;?>"><?
+						} else { ?>
+							<option value="<?=$key;?>"><?=$pal['name'];?> (<?=count($pal['colors']);?> colors)</option>
+						<? } ?>
 					<? } ?>
+					</optgroup>
 				</select>
 
 				<div class="button" id="exportCSV">Export CSV</div>
 
 				<div class="button" id="exportPPM">Export PPM Image</div>
+
+				<div class="button" id="exportAllJSON">Export All JSON</div>
 			</td>
 		</tr>
 
@@ -383,7 +871,7 @@ span.upper {
 				<table class="palette">
 					<tr>
 						<? for( $i = 0 ; $i < $nColors ; $i++ ) { ?>
-							<td id="ink_<?=$i;?>" class="ink"> <?=$i;?></td>
+							<td id="ink_<?=$i;?>" class="ink" style="display:none;"> <?=$i;?></td>
 							<? if(  $i % 8 == 7 ) { ?>
 								</tr><tr>
 							<? } ?>
@@ -417,11 +905,22 @@ span.upper {
 		<tr><td>&nbsp;</td></tr>
 		<tr>
 			<th> RGB </th>
-			<td> <input type="text" id="txt_rgb" value="" placeholder="0..255,0..255,0..255"> </td>
+			<td> <input readonly type="text" id="txt_rgb" value="" placeholder="0..255,0..255,0..255"> </td>
 		</tr>
 	</table>
 
 <div class="swatch"> &nbsp; </div>
+</div>
+<footer class="footer">
+	<span><em>Palette Thing</em> is a part of the <a class="boldlink" 
+			target="_blank"
+			href="https://github.com/BleuLlama/RetroDecorations">RetroDecorations</a> project.
+		&nbsp; // &nbsp;
+		<?=$version;?>
+		&nbsp; // &nbsp; 
+		yorgle@gmail.com</span>
+</footer>
+
 </body>
 <script>
 $(function() {
@@ -695,6 +1194,12 @@ $(function() {
 		return str.length < 4 ? pad3(" " + str) : str;
 	}
 
+	$( "#exportAllJSON" ).click( function() {
+		var json = JSON.stringify( palettes, null, '\t' );
+
+		console.log( json );
+    	download( 'palettes.json', json, 'application/json' );
+	});
 
     $( "#exportPPM" ).click( function() {
     	var pal = palettes[ $( '#palpick' ).val() ];
@@ -717,10 +1222,6 @@ $(function() {
 
     	download( pal.key + '.ppm', content, 'image/x-portable-pixmap' );
     });
-
-
-
-
 });
 </script>
 </html>
