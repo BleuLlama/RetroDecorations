@@ -238,6 +238,48 @@ $palettes = [
 					]
 	],
 
+	'dpaint' => [
+		'name' => 'Deluxe Paint',
+		'colors' => [ 	
+			'0,black,#000000',
+			'1,white,#f0f0f0',
+			'2,red,#e00000',
+			'3,dark red,#a00000',
+			'4,orange,#d08000',
+			'5,yellow,#f0e000',
+			'6,lime green,#80f000',
+			'7,dark green,#008000',
+
+			'8,cyan,#00b060',
+			'9,cornflower,#00d0d0',
+			'10,light blue,#00a0f0',
+			'11,muted blue,#0070c0',
+			'12,blue,#2000f0',
+			'13,purple,#7000f0',
+			'14,magenta,#c000e0',
+			'15,dark magenta,#c00080',
+
+			'16,brown,#602000',
+			'17,sienna,#e05020',
+			'18,light brown,#a05020',
+			'19,peach,#f0c0a0',
+			'20,gray 3,#303030',
+			'21,gray 4,#404040',
+			'22,gray 5,#505050',
+			'23,gray 6,#606060',
+
+			'24,gray 7,#707070',
+			'25,gray 8,#808080',
+			'26,gray 9,#909090',
+			'27,gray 10,#a0a0a0',
+			'28,gray 11,#b0b0b0',
+			'29,gray 12,#c0c0c0',
+			'30,gray 13,#d0d0d0',
+			'31,gray 14,#e0e0e0',
+
+		]
+	],
+
 	"Misc Systems",
 
 
