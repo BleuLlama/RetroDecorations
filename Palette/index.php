@@ -11,8 +11,10 @@ A part of the RetroDecorations repository
 */
 
 
-$version = "v1.02 2020-03-06";
+$version = "v1.04 2020-03-10";
 /*
+	v1.04 2020-03-10 - SL - more C64 palettes, up/down arrow to go through palettes
+	v1.03 2020-03-07 - SL - Amiga 3.x colors, graphicraft
 	v1.02 2020-03-06 - SL - lots more palettes, groups for the dropdown
 	v1.01 2020-03-06 - SL - version labeling, footer, json export. fixed col widths 
 	v1.00 2020-03-05 - SL - inital release to teh webz
@@ -185,8 +187,35 @@ $palettes = [
 			'15,gray 3,#BBB,#bbbbbb',
 		],
 	],
-	'commodore64_b' => [
-		'name' => 'Commodore 64 (calibrated)',
+	'commodore64_colodore' => [
+		'name' => 'Commodore 64 (Colodore)',
+		'credits' => [
+			'colodore.com'
+		],
+		'colors' => [
+			'0,black,#000000',
+			'1,white,#FFFFFF',
+			'2,red,#813338',
+			'3,cyan,#75cec8',
+
+			'4,purple,#8e3c97',
+			'5,green,#56ac4d',
+			'6,blue,#2e2c9b',
+			'7,yellow,#edf171',
+
+			'8,orange,#8e5029',
+			'9,brown,#553800',
+			'10,light red,#c46c71',
+			'11,dark grey,#4a4a4a',
+
+			'12,grey,#7b7b7b',
+			'13,light green,#a9ff9f',
+			'14,light blue,#706deb',
+			'15,light grey,#b2b2b2',
+		],
+	],
+	'commodore64_pepto' => [
+		'name' => 'Commodore 64 (Pepto)',
 		'credits' => [
 			'from http://unusedino.de/ec64/technical/misc/vic656x/colors/',
 			'Philip "Pepto" Timmermann, <pepto@pepto.de>'
@@ -211,6 +240,35 @@ $palettes = [
 		],
 	],
 
+	'commodore64_rittwage' => [
+		'name' => 'Commodore 64 (Rittwage)',
+		'credits' => [
+			'Pete Rittwage\'s NTSC C64 and 1702 palette V2',
+			'Taken from 6567R8 on a 1984 board (250425)'
+		],
+		'colors' => [
+			'0,black,#000000,0',
+			'1,white,#FFFFFF,E',
+			'2,red,#903040,4',
+			'3,cyan,#70A4B2',
+
+			'4,purple,#702bff,8',
+			'5,green,#40b710,4',
+			'6,blue,#2000bf,4',
+			'7,yellow,#e0e060,c',
+
+			'8,orange,#b05030,4',
+			'9,brown,#803000,4',
+			'10,light red,#ff7b9e,8',
+			'11,dark grey,#404040,4',
+
+			'12,grey,#909090,8',
+			'13,light green,#90ff90,8',
+			'14,light blue,#3060ff,8',
+			'15,light grey,#c0c0c0,c',
+		],
+	],
+
 	'Commodore Amiga',
 
 	'amiga1b' => [
@@ -226,16 +284,133 @@ $palettes = [
 		'colors' => [ 	'0,blue,#0050A0',
 						'1,white,#f0f0f0',
 						'2,black,#000020',
-						'3,orange,#f08020'
+						'3,orange,#f08020',
+
+						'4,magicwb bright blue,#1000f0',
+						'5,magicwb bright magenta,#f000f0',
+						'6,magicwb bright cyan,#00f0f0',
+						'7,magicwb bright white,#f0f0f0',
+
+						'4,mouse red,#e02020',
+						'5,mouse peach,#f0d0b0',
 					]
 	],
 	'amiga2' => [
-		'name' => 'Amiga 2.04',
+		'name' => 'Amiga 2.0',
 		'colors' => [ 	'0,grey,#a0a0a0',
 						'1,black,#000000',
 						'2,white,#f0f0f0',
 						'3,blue,#6080b0',
+
+						'4,red,#e04040',
+						'5,green,#50e050',
+						'6,blue,#0040d0',
+						'7,orange,#E09000',
+
+						'8,mouse red,#e04040',
+						'9,mouse peach,#e0c0c0',
 					]
+	],
+
+	'amiga3_1_tint' => [
+		'name' => 'Amiga 3.x - 1. Tint',
+		'colors' => [	'0,tan,#c0b090',
+						'1,black,#000020',
+						'2,white,#f0f0f0',
+						'3,light blue,#6080c0',
+						'4,red,#f02030',
+						'5,green,#00e030',
+						'6,blue,#0030e0',
+						'7,orange,#f09000',
+		]
+	],
+
+	'amiga3_2_pharaoh' => [
+		'name' => 'Amiga 3.x - 2. Pharaoh',
+		'colors' => [	'0,light blue,#80a0c0',
+						'1,black,#000020',
+						'2,white,#f0f0f0',
+						'3,peach,#f0c090',
+						'6,blue,#2000f0',
+						'4,red,#f00000',
+						'5,green,#00f060',
+						'7,dark orange,#e0a000',
+		]
+	],
+	'amiga3_3_sunset' => [
+		'name' => 'Amiga 3.x - 3. Sunset',
+		'colors' => [	'0,light blue,#80a0c0',
+						'1,black,#000020',
+						'2,white,#f0f0f0',
+						'3,orange,#f09070',
+						'6,lime,#c0f000',
+						'4,red,#f00020',
+						'5,green,#00f000',
+						'7,blue,#4040f0',
+		]
+	],
+	'amiga3_4_ocean' => [
+		'name' => 'Amiga 3.x - 4. Ocean',
+		'colors' => [	'0,cyan,#00b0a0',
+						'1,black,#000020',
+						'2,white,#e0e0f0',
+						'3,blue,#4070a0',
+						'6,yellow,#f0f000',
+						'4,purple,#6040f0',
+						'5,green,#00f000',
+						'7,red,#f00000',
+		]
+	],
+	'amiga3_5_steel' => [
+		'name' => 'Amiga 3.x - 5. Steel',
+		'colors' => [	'0,steel blue,#90b0e0',
+						'1,black,#000020',
+						'2,white,#f0f0f0',
+						'3,dark blue,#5080b0',
+						'6,light blue,#a0d0f0',
+						'4,orange,#f09000',
+						'5,fuscia,#f02080',
+						'7,pale green,#a0f080',
+		]
+	],
+	'amiga3_6_chocolate' => [
+		'name' => 'Amiga 3.x - 6. Chocolate',
+		'colors' => [	'0,cocoa,#a09080',
+						'1,semisweet,#302000',
+						'2,white,#f0e0e0',
+						'3,latte,#f0d0b0',
+
+						'6,red,#f02030',
+						'4,green,#00e030',
+						'5,light blue,#c0d0f0',
+						'7,blue,#0030e0',
+		]
+	],
+	'amiga3_7_pewter' => [
+		'name' => 'Amiga 3.x - 7. Pewter',
+		'colors' => [	'0,pewter,#c0c080',
+						'1,black,#000030',
+						'2,white,#f0f0f0',
+						'3,light blue,#90aab0',
+
+						'6,red,#f02030',
+						'4,green,#00e030',
+						'5,pale yellow,#d0f070',
+						'7,blue,#0030e0',
+		]
+	],
+	'amiga3_8_wine' => [
+		'name' => 'Amiga 3.x - 8. Wine',
+		'colors' => [	'0,pale red,#d09090',
+						'1,black,#000020',
+						'2,white,#f0e0e0',
+						'3,dark red,#c06070',
+
+						'6,bright yellow,#d0f070',
+						'4,purple,#8030f0',
+						'5,green,#10c030',
+						'7,cyan,#60e0c0',
+		]
 	],
 
 	'dpaint' => [
@@ -276,7 +451,48 @@ $palettes = [
 			'29,gray 12,#c0c0c0',
 			'30,gray 13,#d0d0d0',
 			'31,gray 14,#e0e0e0',
+		]
+	],
 
+	'graphicraft' => [
+		'name' => 'GraphiCraft',
+		'colors' => [ 
+
+			'0,black,#000000',
+			'1,red,#f00000',
+			'2,orange red,#f03000',
+			'3,dark orange,#f05000',
+			'4,orange,#f08000',
+			'5,pale orange,#f0b000',
+			'6,mustard,#f0d000',
+			'7,yellow,#f0f000',
+
+			'8,pea green,#b0f000',
+			'9,lime green,#80e000',
+			'10,green,#50d000',
+			'11,medium green,#20c000',
+			'12,dark green,#00b010',
+			'13,cornflower,#00b0e0',
+			'14,light cyan,#00d0e0',
+			'15,cyan,#10f0b0',
+
+			'16,light blue,#60f0e0',
+			'17,saab 92,#60e0e0',
+			'18,light purple,#6090f0',
+			'19,purple,#6010f0',
+			'20,navy blue,#0060d0',
+			'21,dark magenta,#9010f0',
+			'22,magenta,#d010f0',
+			'23,bright magenta,#e010e0',
+
+			'24,light peach,#f0e0f0',
+			'25,light tan,#f0d0c0',
+			'26,tan,#e0b0a0',
+			'27,medium tan,#c09090',
+			'28,dark tan,#b08070',
+			'29,gray,#d0d0d0',
+			'30,dark gray,#a0a0a0',
+			'31,light gray,#e0e0e0',
 		]
 	],
 
@@ -752,7 +968,7 @@ function adjustPaletteStruct( $pals )
 }
 
 function cmp( $a, $b ) {
-    return strcmp($a[ 'name' ], $b[ 'name' ]);
+	return strcmp($a[ 'name' ], $b[ 'name' ]);
 }
 
 $palettes = adjustPaletteStruct( $palettes );
@@ -1019,7 +1235,7 @@ $(function() {
 		return values;
 	}
 
-    // from https://ourcodeworld.com/articles/read/189/how-to-create-a-file-and-generate-a-download-with-javascript-in-the-browser-without-a-server
+	// from https://ourcodeworld.com/articles/read/189/how-to-create-a-file-and-generate-a-download-with-javascript-in-the-browser-without-a-server
 	function download( filename, text, type ) {
 		if( type === undefined ) {
 			type = 'text/plain';
@@ -1037,25 +1253,25 @@ $(function() {
 		document.body.removeChild(element);
 	}
 
-    function hex_Changed( el ) 
-    {
-    	var valid = isValidColor( el.val() );
-    	if( valid ) { 
-    		var rgba = getRGBA( el.val() );
-    		el.addClass( "value-ok" );
-    		el.removeClass( "value-bad" );
+	function hex_Changed( el ) 
+	{
+		var valid = isValidColor( el.val() );
+		if( valid ) { 
+			var rgba = getRGBA( el.val() );
+			el.addClass( "value-ok" );
+			el.removeClass( "value-bad" );
 
-    		$( '#txt_r' ).val( rgba[0] );
-    		$( '#txt_g' ).val( rgba[1] );
-    		$( '#txt_b' ).val( rgba[2] );
-    		$( '#txt_rgb' ).val(  rgba.splice(0,3).join( ',' ) );
+			$( '#txt_r' ).val( rgba[0] );
+			$( '#txt_g' ).val( rgba[1] );
+			$( '#txt_b' ).val( rgba[2] );
+			$( '#txt_rgb' ).val(  rgba.splice(0,3).join( ',' ) );
 
-   			$( ".swatch" ).css( 'background', el.val() );
-    	} else {
-    		el.addClass( "value-bad" );
-    		el.removeClass( "value-ok" );
-    	}
-    }
+			$( ".swatch" ).css( 'background', el.val() );
+		} else {
+			el.addClass( "value-bad" );
+			el.removeClass( "value-ok" );
+		}
+	}
 
 	function rgb2hex( rgb ){
 		rgb = rgb.match(/^rgb((d+),s*(d+),s*(d+))$/);
@@ -1085,138 +1301,138 @@ $(function() {
 		return false;
 	}
 
-    function r_g_b_Changed( el ) {
-    	var els = [ $( '#txt_r' ), $( '#txt_g' ), $( '#txt_b' ) ];
+	function r_g_b_Changed( el ) {
+		var els = [ $( '#txt_r' ), $( '#txt_g' ), $( '#txt_b' ) ];
 
-    	var allValid = true;
+		var allValid = true;
 
-    	$.each( els, function() {
-    		var valid = valRGBOK( $( this ).val() );
+		$.each( els, function() {
+			var valid = valRGBOK( $( this ).val() );
 
-    		if( valid ) {
-	    		$(this).addClass( "value-ok" );
-	    		$(this).removeClass( "value-bad" );
+			if( valid ) {
+				$(this).addClass( "value-ok" );
+				$(this).removeClass( "value-bad" );
 
-    		} else {
-	    		$(this).addClass( "value-bad" );
-	    		$(this).removeClass( "value-ok" );
-	    		allValid = false;
-    		}
+			} else {
+				$(this).addClass( "value-bad" );
+				$(this).removeClass( "value-ok" );
+				allValid = false;
+			}
 
-    	} );
+		} );
 
-    	//# setup the swatch
-    	var r = $( '#txt_r' ).val();
-    	var g = $( '#txt_g' ).val();
-    	var b = $( '#txt_b' ).val();
+		//# setup the swatch
+		var r = $( '#txt_r' ).val();
+		var g = $( '#txt_g' ).val();
+		var b = $( '#txt_b' ).val();
 
-    	if( allValid ) {
-    		var colorHex = RGB2Color( r,g,b );
+		if( allValid ) {
+			var colorHex = RGB2Color( r,g,b );
 
-   			$( ".swatch" ).css( 'background', colorHex );
-   			$( "#txt_hex" ).val( colorHex );
+			$( ".swatch" ).css( 'background', colorHex );
+			$( "#txt_hex" ).val( colorHex );
 
-    		$( "#txt_rgb" ).val( '' + r + ',' + g + ',' + b );
-    	}
-    }
+			$( "#txt_rgb" ).val( '' + r + ',' + g + ',' + b );
+		}
+	}
 
-    function rgb_Changed( el )
-    {
-    	var rgb = el.val().split( ',' );
-    	if( !valRGBOK( rgb[0] ) || !valRGBOK( rgb[1] ) || !valRGBOK( rgb[2] ) )
-    	{
-    	}
-    }
-
-
-    $( "#txt_hex" ).on( "change input", function() { 
-    	hex_Changed( $(this) );
-    } );
-
-    $( "#txt_r" ).on( "change input", function() { 
-    	r_g_b_Changed( $(this) );
-    } );
-    $( "#txt_g" ).on( "change input", function() { 
-    	r_g_b_Changed( $(this) );
-    } );
-    $( "#txt_b" ).on( "change input", function() { 
-    	r_g_b_Changed( $(this) );
-    } );
-    $( "#txt_rgb" ).on( "change input", function() { 
-    	rgb_Changed( $(this) );
-    } );
+	function rgb_Changed( el )
+	{
+		var rgb = el.val().split( ',' );
+		if( !valRGBOK( rgb[0] ) || !valRGBOK( rgb[1] ) || !valRGBOK( rgb[2] ) )
+		{
+		}
+	}
 
 
-    $( "#palpick" ).change( function() {
-    	var palslug =  $(this).val();
-    	Palette_install( palslug );
-    });
+	$( "#txt_hex" ).on( "change input", function() { 
+		hex_Changed( $(this) );
+	} );
 
-    function Palette_install( val )
-    {
-    	var pal = palettes[ val ];
+	$( "#txt_r" ).on( "change input", function() { 
+		r_g_b_Changed( $(this) );
+	} );
+	$( "#txt_g" ).on( "change input", function() { 
+		r_g_b_Changed( $(this) );
+	} );
+	$( "#txt_b" ).on( "change input", function() { 
+		r_g_b_Changed( $(this) );
+	} );
+	$( "#txt_rgb" ).on( "change input", function() { 
+		rgb_Changed( $(this) );
+	} );
 
-    	for( i=0 ; i<pal.colors.length ; i++ )
-    	{
-    		var cc = pal.colors[ i ];
 
-    		var ic = $( '#ink_' + i );
+	$( "#palpick" ).change( function() {
+		var palslug =  $(this).val();
+		Palette_install( palslug );
+	});
 
-    		var textColor = "white";
-    		var v = Math.max( cc.r, Math.max( cc.g, cc.b ));
-    		if( v >= 180 ) {
-    			textColor = "black";
-    		}
-    		ic.css( 'background-color', cc.hex );
-    		ic.css( 'color', textColor );
-    		ic.data( 'name', cc.name );
-    		ic.data( 'r', cc.r );
-    		ic.data( 'g', cc.g );
-    		ic.data( 'b', cc.b );
-    		ic.data( 'hex', cc.hex );
-    		ic.html( '' + cc.index 
-    					+ '<br/><span class="caps">' + cc.name + '</span><br/>' 
-    					+ '<span class="upper">' + cc.hex + '</span>');
-    		ic.fadeIn();
+	function Palette_install( val )
+	{
+		var pal = palettes[ val ];
 
-    		ic.mouseenter( Palette_Enter );
-    		ic.mouseleave( Palette_Leave );
+		for( i=0 ; i<pal.colors.length ; i++ )
+		{
+			var cc = pal.colors[ i ];
 
-    	}
-    	for( i = pal.colors.length ; i<nColors ; i++ )
-    	{
-    		var ic = $( '#ink_' + i);
-    		ic.html( '' );
-    		ic.fadeOut();
-    	}
-    }
+			var ic = $( '#ink_' + i );
 
-    function Palette_Enter() {
-    	$( '#txt_hex' ).val( $(this).data( 'hex' ));
-    	$( '#txt_r' ).val( $(this).data( 'r' ));
-    	$( '#txt_g' ).val( $(this).data( 'g' ));
-    	$( '#txt_b' ).val( $(this).data( 'b' ));
-    	$( '.swatch' ).css( 'background', $(this).data( 'hex' ) );
+			var textColor = "white";
+			var v = Math.max( cc.r, Math.max( cc.g, cc.b ));
+			if( v >= 180 ) {
+				textColor = "black";
+			}
+			ic.css( 'background-color', cc.hex );
+			ic.css( 'color', textColor );
+			ic.data( 'name', cc.name );
+			ic.data( 'r', cc.r );
+			ic.data( 'g', cc.g );
+			ic.data( 'b', cc.b );
+			ic.data( 'hex', cc.hex );
+			ic.html( '' + cc.index 
+						+ '<br/><span class="caps">' + cc.name + '</span><br/>' 
+						+ '<span class="upper">' + cc.hex + '</span>');
+			ic.fadeIn();
 
-    }
+			ic.mouseenter( Palette_Enter );
+			ic.mouseleave( Palette_Leave );
 
-    function Palette_Leave() {
-    	/*
-    	$( '#txt_hex' ).text( '' );
-    	$( '#txt_r' ).text('0');
-    	$( '#txt_g' ).text('0');
-    	$( '#txt_b' ).text('0');
-    	$( '.swatch' ).css( 'background', 'black' );
-    	*/
-    }
+		}
+		for( i = pal.colors.length ; i<nColors ; i++ )
+		{
+			var ic = $( '#ink_' + i);
+			ic.html( '' );
+			ic.fadeOut();
+		}
+	}
 
-    $( "#palpick" ).val( 'mac2' ).change();
-    $( "#txt_hex" ).change();
+	function Palette_Enter() {
+		$( '#txt_hex' ).val( $(this).data( 'hex' ));
+		$( '#txt_r' ).val( $(this).data( 'r' ));
+		$( '#txt_g' ).val( $(this).data( 'g' ));
+		$( '#txt_b' ).val( $(this).data( 'b' ));
+		$( '.swatch' ).css( 'background', $(this).data( 'hex' ) );
 
-    $( "#exportCSV" ).click( function() {
-    	var pal = palettes[ $( '#palpick' ).val() ];
+	}
 
-    	var content = [ 'index,name,red,green,blue,hex'];
+	function Palette_Leave() {
+		/*
+		$( '#txt_hex' ).text( '' );
+		$( '#txt_r' ).text('0');
+		$( '#txt_g' ).text('0');
+		$( '#txt_b' ).text('0');
+		$( '.swatch' ).css( 'background', 'black' );
+		*/
+	}
+
+	$( "#palpick" ).val( 'mac2' ).change();
+	$( "#txt_hex" ).change();
+
+	$( "#exportCSV" ).click( function() {
+		var pal = palettes[ $( '#palpick' ).val() ];
+
+		var content = [ 'index,name,red,green,blue,hex'];
 		$.each( pal.colors, function() {
 			content.push( '' + this.index + ', '
 							+ this.name + ', '
@@ -1227,8 +1443,8 @@ $(function() {
 		});
 		content = content.join( '\n' );
 
-    	download( pal.key + '.csv', content, 'text/csv' );
-    });
+		download( pal.key + '.csv', content, 'text/csv' );
+	});
 
 
 	function pad3( str ) {
@@ -1240,14 +1456,14 @@ $(function() {
 		var json = JSON.stringify( palettes, null, '\t' );
 
 		console.log( json );
-    	download( 'palettes.json', json, 'application/json' );
+		download( 'palettes.json', json, 'application/json' );
 	});
 
-    $( "#exportPPM" ).click( function() {
-    	var pal = palettes[ $( '#palpick' ).val() ];
+	$( "#exportPPM" ).click( function() {
+		var pal = palettes[ $( '#palpick' ).val() ];
 
-    	var content = [
-    		'P3',
+		var content = [
+			'P3',
 			'# ' + pal.name + ' palette',
 			'1 ' + pal.colors.length,
 			'255'];
@@ -1255,15 +1471,53 @@ $(function() {
 			content.push( '' + pad3( this.r ) + ' ' 
 							+ pad3( this.g ) + ' ' 
 							+ pad3( this.b )
-						  	+ '   # ' + this.index 
-						  	+ ': ' + this.name 
-						  	+ ' - ' + this.hex );
+							+ '   # ' + this.index 
+							+ ': ' + this.name 
+							+ ' - ' + this.hex );
 		});
 
 		content = content.join( '\n' );
 
-    	download( pal.key + '.ppm', content, 'image/x-portable-pixmap' );
-    });
+		download( pal.key + '.ppm', content, 'image/x-portable-pixmap' );
+	});
+
+	function nextPalette() {
+		var options = $( "#palpick" ).find( 'option' );
+		var selected = 0;
+		$.each( options, function() {
+			if( $(this).val() == $( '#palpick' ).val() ) {
+				selected = this.index;
+			}
+		});
+		selected = selected + 1;
+		if( selected >= options.length ) { selected = 1; }
+
+		$( "#palpick" ).val( options[selected].value ).change();
+
+	}
+
+	function prevPalette() {
+		var options = $( "#palpick" ).find( 'option' );
+		var selected = 0;
+		$.each( options, function() {
+			if( $(this).val() == $( '#palpick' ).val() ) {
+				selected = this.index;
+			}
+		});
+		selected = selected -1;
+		if( selected < 1 ) { selected = options.length-1; }
+
+		$( "#palpick" ).val( options[selected].value ).change();
+	}
+
+	$( "body" ).keydown( function(e){
+		if( e.code == 'ArrowUp' ){
+			prevPalette();
+		} else if( e.code == 'ArrowDown' ) {
+			nextPalette();
+		}
+	});
+
 });
 </script>
 </html>
