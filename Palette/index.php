@@ -1,4 +1,4 @@
-<?php
+ <?php
 /* 
 
 Palette browser thing
@@ -21,6 +21,37 @@ $version = "v1.04 2020-03-10";
 */
 
 $palettes = [
+
+	"Amethyst",
+
+	'Amethyst' => [
+		'name' => 'Amethyst (lo-res)',
+		'credits' => [
+			'from youtube video about Amethyst AVR computer',
+			'colors from apple 2 usesd where applicable'
+		],
+		'colors' => [ 	'0,black,#000000',
+						'1,dark cyan,#004924',
+						'2,blue,#241694',
+						'3,medium blue,#1764bd',
+
+						'4,red,#660422',
+						'5,grey 1,#555555',
+						'6,purple,#9129bc',
+						'7,light blue,#8171e3',
+
+						'8,dark green,#233c00', /* brown! */
+						'9,green,#198b00',
+						'10,grey 2,#555555',
+						'11,aqua,#46a082',
+
+						'12,orange,#914a00',
+						'13,yellow,#82961f',
+						'14,pink,#ba6380',
+						'15,white,#adadad',
+					]
+	],
+
 
 	"Apple",
 
