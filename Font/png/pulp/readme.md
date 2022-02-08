@@ -18,36 +18,29 @@ credit.  :)
 <th><img width="320" height="128"  src="ADM-3A.pulp.png"><br/>ADM-3A</th>
 <th><img width="320" height="128"  src="Amiga.Topaz.1.Serif.pulp.png"><br/>Amiga Topaz 1</th>
 <th><img width="320" height="128"  src="Amiga.Topaz.2.Sans.pulp.png"><br/>Amiga Topaz 2</th>
+</tr><tr>
 <th><img width="320" height="128"  src="Apple.II.pulp.png"><br/>Apple II</th>
 <th><img width="320" height="128"  src="Atari.800.pulp.png"><br/>Atari 800</th>
 <th><img width="320" height="128"  src="Commodore.128.pulp.png"><br/>Commodore 128</th>
+</tr><tr>
 <th><img width="320" height="128"  src="Commodore.64.pulp.png"><br/>Commodore 64</th>
 <th><img width="320" height="128"  src="MSX.pulp.png"><br/>MSX</th>
-
-<th><img width="320" height="128"  src="ADM"><br/>ADM</th>
-
-Amiga.Topaz.1.Serif.pulp.png
-Amiga.Topaz.2.Sans.pulp.png
-Apple.II.pulp.png
-Atari.800.pulp.png
-Commodore.128.pulp.png
-Commodore.64.pulp.png
-Commodore.Pet.pulp.png
-MSX.pulp.png
-TI994A.pulp.png
-VT220.pulp.png
-ZX.Spectrum.pulp.png
-dos.blocksansf.pulp.png
-dos.flat.pulp.png
-dos.inverted.pulp.png
-dos.italics.pulp.png
-dos.sans.pulp.png
-dos.serif.pulp.png
-dos.super.pulp.png
-dos.thin.pulp.png
-dos.vga.pulp.png
-green2.png
-readme.md
+<th><img width="320" height="128"  src="TI994A.pulp.png"><br/>TI 99/4A</th>
+</tr><tr>
+<th><img width="320" height="128"  src="VT220.pulp.png"><br/>VT220</th>
+<th><img width="320" height="128"  src="ZX.Spectrum.pulp.png"><br/>ZX Spectrum</th>
+<th><img width="320" height="128"  src="dos.blocksansf.pulp.png"><br/>DOS Block Sans</th>
+</tr><tr>
+<th><img width="320" height="128"  src="dos.flat.pulp.png"><br/>DOS Flat</th>
+<th><img width="320" height="128"  src="dos.inverted.pulp.png"><br/>DOS Inverted</th>
+<th><img width="320" height="128"  src="dos.italics.pulp.png"><br/>DOS Italics</th>
+</tr><tr>
+<th><img width="320" height="128"  src="dos.sans.pulp.png"><br/>DOS Sans</th>
+<th><img width="320" height="128"  src="dos.serif.pulp.png"><br/>DOS Serif</th>
+<th><img width="320" height="128"  src="dos.super.pulp.png"><br/>DOS Super</th>
+</tr><tr>
+<th><img width="320" height="128"  src="dos.thin.pulp.png"><br/>DOS Thin</th>
+<th><img width="320" height="128"  src="dos.vga.pulp.png"><br/>DOS VGA</th>
 </tr>
 </table>
 --------------------------------------------------------------------------------
