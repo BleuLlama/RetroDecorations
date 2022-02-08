@@ -12,6 +12,10 @@ credit.  :)
 (basically CC-Attribution)
 
 --------------------------------------------------------------------------------
+
+
+<img src="ADM-3A.pulp.png">
+--------------------------------------------------------------------------------
 The MIT License (MIT)
 
 Copyright (c) 2022 Scott Lawrence / BleuLlama / yorgle@gmail.com
