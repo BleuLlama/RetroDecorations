@@ -13,8 +13,14 @@ credit.  :)
 
 --------------------------------------------------------------------------------
 
-
-<img src="ADM-3A.pulp.png">
+<style>
+img.dw { width:320; height:128 }
+</style>
+<table>
+<tr>
+<td><img class="dw" src="ADM-3A.pulp.png"><br/>ADM-3A</td>
+</tr>
+</table>
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
