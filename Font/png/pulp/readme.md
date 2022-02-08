@@ -13,12 +13,41 @@ credit.  :)
 
 --------------------------------------------------------------------------------
 
-<style>
-img.dw { width:320; height:128 }
-</style>
 <table>
 <tr>
-<td><img class="dw" src="ADM-3A.pulp.png"><br/>ADM-3A</td>
+<th><img width="320" height="128"  src="ADM-3A.pulp.png"><br/>ADM-3A</th>
+<th><img width="320" height="128"  src="Amiga.Topaz.1.Serif.pulp.png"><br/>Amiga Topaz 1</th>
+<th><img width="320" height="128"  src="Amiga.Topaz.2.Sans.pulp.png"><br/>Amiga Topaz 2</th>
+<th><img width="320" height="128"  src="Apple.II.pulp.png"><br/>Apple II</th>
+<th><img width="320" height="128"  src="Atari.800.pulp.png"><br/>Atari 800</th>
+<th><img width="320" height="128"  src="Commodore.128.pulp.png"><br/>Commodore 128</th>
+<th><img width="320" height="128"  src="Commodore.64.pulp.png"><br/>Commodore 64</th>
+<th><img width="320" height="128"  src="MSX.pulp.png"><br/>MSX</th>
+
+<th><img width="320" height="128"  src="ADM"><br/>ADM</th>
+
+Amiga.Topaz.1.Serif.pulp.png
+Amiga.Topaz.2.Sans.pulp.png
+Apple.II.pulp.png
+Atari.800.pulp.png
+Commodore.128.pulp.png
+Commodore.64.pulp.png
+Commodore.Pet.pulp.png
+MSX.pulp.png
+TI994A.pulp.png
+VT220.pulp.png
+ZX.Spectrum.pulp.png
+dos.blocksansf.pulp.png
+dos.flat.pulp.png
+dos.inverted.pulp.png
+dos.italics.pulp.png
+dos.sans.pulp.png
+dos.serif.pulp.png
+dos.super.pulp.png
+dos.thin.pulp.png
+dos.vga.pulp.png
+green2.png
+readme.md
 </tr>
 </table>
 --------------------------------------------------------------------------------
